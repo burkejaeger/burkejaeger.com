@@ -1,21 +1,76 @@
 body, html {
     font-family: "Roboto", sans-serif;
-    background: linear-gradient(to bottom, #87e0fd 0%,#ff8ac8 40%,#05e081 100%);
+    // background: linear-gradient(to bottom, #87e0fd 0%,#ff8ac8 40%,#05e081 100%);
     height: 100%;
-    color: rgb(79, 79, 79)
-  }
+    color: rgb(22, 22, 22);
+
+    background: linear-gradient(89deg, #dfdfe1, #4094f7, #e1f3da, #94ddf9);
+    background-size: 800% 800%;
+
+    animation: AnimationName 34s ease infinite;
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+  
 
   .logo {
-    background-image: url('img/bluepinkdot.png');
-    width: 100px;
-    height: 100px;
+    background-image: url('img/burkecircle.png');
+    width: 200px;
+    height: 200px;
     background-repeat: no-repeat;
     background-size: contain;
   }
 
+  .bmwi4 {
+    background-image: url('img/bmwi4.png');
+    margin: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+
+  .experience-title{
+    font-family: 'Archivo', sans-serif;
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-self: center;
+  }
+
+  .experience-card{
+    background-color: whitesmoke;
+    display: flex;
+    font-size: 2em;
+    width: 50vw;
+    margin: 20px;
+  }
+
+  .experience-card{
+    background-color: whitesmoke;
+    width: auto;
+    height: 100%;
+    display: flex;
+    font-size: 2em;
+    margin: 20px;
+  }
+
+  .experience-left-column{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 40vw;
+  }
+
 
   .active {
-    color: forestgreen;
+    color: black;
+    box-shadow: 0px 2px 0px black;
   }
 
 nav ul{
@@ -23,5 +78,11 @@ nav ul{
   justify-content: space-between;
   list-style: none;
   margin: 20px;
+}
+
+a{
+  color: rgb(22, 22, 22);
+  text-decoration: none;
+
 }
   
