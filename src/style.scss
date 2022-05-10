@@ -19,8 +19,8 @@ body, html {
 
   .logo {
     background-image: url('img/burkecircle.png');
-    width: 200px;
-    height: 200px;
+    width: 15vw;
+    height: 15vw;
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -33,6 +33,18 @@ body, html {
     display: flex;
     height: 100%;
     width: 100%;
+  }
+
+  .healingtogethermacbook {
+    background-image: url('img/healingtogethermacbook.png');
+    margin: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    min-height: 10px;
+    max-height: 45vh;
+    height: 10000px;
+    width: 45vw;
   }
 
   .experience-title{
@@ -75,9 +87,15 @@ body, html {
 
 nav ul{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   list-style: none;
   margin: 20px;
+  position: sticky;
+}
+
+nav ul li{
+  margin: 20px;
+  font-family: 'Kanit', sans-serif;
 }
 
 a{
@@ -86,3 +104,66 @@ a{
 
 }
   
+Button{
+  font-family: 'Philosopher', sans-serif;
+
+}
+
+.project-title{
+  font-family: 'Philosopher', sans-serif;
+  margin: 15px;
+}
+
+.project-org{
+  font-family: 'Philosopher', sans-serif;
+  margin: 15px;
+
+}
+
+
+.dev-header{
+  display: flex;
+  flex-direction: row;
+  margin: 5vw;
+  justify-content:center;
+  margin-top: 10px;
+}
+
+.logo-wrapper{
+  display: flex;
+  margin: 2vw;
+}
+
+.header-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.my-name{
+  font-family: 'Philosopher', sans-serif;
+  font-size: 3.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.my-title{
+  font-family: 'Kanit', sans-serif;
+  margin: 6px;
+}
+
+.titles{
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 0px;
+}
+
+.project-header{
+  display: flex;
+  justify-content: space-between;
+}
