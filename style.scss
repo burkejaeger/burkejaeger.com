@@ -4,7 +4,7 @@ body, html {
     height: 100%;
     color: rgb(22, 22, 22);
 
-    background: linear-gradient(89deg, #dfdfe1, #4094f7, #e1f3da, #94ddf9);
+    background: linear-gradient(89deg, #dfdfe1, #91bdf0, #e1f3da, #94ddf9);
     background-size: 800% 800%;
 
     animation: AnimationName 34s ease infinite;
@@ -112,14 +112,36 @@ Button{
 .project-title{
   font-family: 'Philosopher', sans-serif;
   margin: 15px;
+  font-size: 2.3em;
 }
 
 .project-org{
   font-family: 'Philosopher', sans-serif;
   margin: 15px;
-
+  font-size: 1.5em;
+  margin-bottom: 0px;
 }
 
+.project-dates{
+  font-family: 'Philosopher', sans-serif;
+  margin: 15px;
+  font-size: 1.5em;
+  margin-top: 0px;
+}
+
+.project-display{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.project-completion-details{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
 
 .dev-header{
   display: flex;
@@ -143,7 +165,7 @@ Button{
 }
 
 .my-name{
-  font-family: 'Philosopher', sans-serif;
+  font-family: 'Encode Sans SC', sans-serif;
   font-size: 3.5em;
   display: flex;
   justify-content: center;
@@ -153,7 +175,9 @@ Button{
 
 .my-title{
   font-family: 'Kanit', sans-serif;
-  margin: 6px;
+  margin-left: 6px;
+  margin-right: 6px;
+  font-size: 1.5em;
 }
 
 .titles{
@@ -161,9 +185,25 @@ Button{
   display: flex;
   flex-flow: row wrap;
   padding-left: 0px;
+  justify-content: center;
 }
 
 .project-header{
   display: flex;
   justify-content: space-between;
+}
+
+.project-item{
+  margin: 20px;
+  padding: 10px;
+}
+
+.section-title{
+  font-family: 'Encode Sans SC', sans-serif;
+  font-size: 2.5em;
+}
+
+.skill{
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.5em;
 }

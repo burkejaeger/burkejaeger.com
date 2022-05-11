@@ -30,39 +30,9 @@ function Experiences(props) {
 function Projects(props) {
   return (
     <div>
-      <div className="dev-header">
-        <div className="logo-wrapper">
-          <div className="logo" />
-        </div>
-        <div className="header-text">
-          <div className="my-name"> Burke J. Jaeger </div>
-          <ul className="titles">
-            <li className="my-title"> Sotware Engineer </li>
-            <li className="my-title"> Research Assistant </li>
-            <li className="my-title"> Dartmouth Undergraduate </li>
-          </ul>
-        </div>
-      </div>
-
       <Skills />
-
-      <div className="project-item">
-        <div className="project-header">
-          <div className="project-title"> Healing Together </div>
-          <div className="project-completion-details">
-            <div className="project-org"> RWJBarnabas Health </div>
-            <div className="project-dates"> Summer 2020 </div>
-          </div>
-        </div>
-        <div className="project-img">
-          <div className="healingtogethermacbook" />
-        </div>
-        <div className="project-cta">
-          <Link to="healing-together">
-            <Button variant="outlined"> View the LiveStream </Button>
-          </Link>
-        </div>
-      </div>
+      <HT />
+      <FMSCF />
       <Card>
         Healing Together
         <Button> View the LiveStream </Button>
@@ -85,6 +55,7 @@ function App(props) {
     <Router>
       <div>
         <Nav />
+        <Header />
         <Routes>
           <Route path="/" element={<Projects />} />
           <Route path="/experiences" element={<Experiences />} />
@@ -92,6 +63,7 @@ function App(props) {
           <Route path="/test/:id" element={<Test />} />
           <Route path="*" element={<FallBack />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
@@ -103,8 +75,6 @@ function Nav(props) {
       <ul>
         <li><NavLink to="/" exact="true">Projects</NavLink></li>
         <li><NavLink to="/experiences">Experiences</NavLink></li>
-        <li><NavLink to="/test/id1">test id1</NavLink></li>
-        <li><NavLink to="/test/id2">test id2</NavLink></li>
       </ul>
     </nav>
   );
@@ -130,12 +100,82 @@ function Test(props) {
 function Skills(props) {
   return (
     <div>
-      <div> SKILLS </div>
+      <div className="section-title"> Skills </div>
       <ul>
-        <li> React </li>
-        <li> TestCafe </li>
-        <li> Python </li>
+        <li className="skill"> React </li>
+        <li className="skill"> TestCafe </li>
+        <li className="skill"> Python </li>
       </ul>
+    </div>
+  );
+}
+
+function Header(props) {
+  return (
+    <div className="dev-header">
+      <div className="logo-wrapper">
+        <div className="logo" />
+      </div>
+      <div className="header-text">
+        <div className="my-name"> Burke J. Jaeger </div>
+        <ul className="titles">
+          <li className="my-title"> Sotware Engineer </li>
+          <li className="my-title"> Research Assistant </li>
+          <li className="my-title"> Dartmouth Undergraduate </li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+function Footer(props) {
+  return (
+    <div> Developed by Burke J. Jaeger</div>
+  );
+}
+
+function FMSCF(props) {
+  return (
+    <div className="project-item">
+      <div className="project-header">
+        <div className="project-title"> Field Management System 3.0 +<br /> ChargeForward</div>
+        <div className="project-completion-details">
+          <div className="project-org"> BMW Group </div>
+          <div className="project-dates"> Winter 2022 </div>
+        </div>
+      </div>
+      <div className="project-img">
+        <div className="healingtogethermacbook" />
+      </div>
+      <div className="project-cta">
+        <Link to="healing-together">
+          <Button variant="outlined"> View the LiveStream </Button>
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+function HT(props) {
+  return (
+    <div className="project-item">
+      <div className="project-header">
+        <div className="project-title"> Healing Together </div>
+        <div className="project-completion-details">
+          <div className="project-org"> RWJBarnabas Health </div>
+          <div className="project-dates"> Summer 2020 </div>
+        </div>
+      </div>
+      <div className="project-display">
+        <div className="project-img">
+          <div className="healingtogethermacbook" />
+        </div>
+        <div className="project-cta">
+          <Link to="healing-together">
+            <Button variant="outlined"> View the LiveStream </Button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
