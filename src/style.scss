@@ -3,6 +3,7 @@ body, html {
     // background: linear-gradient(to bottom, #87e0fd 0%,#ff8ac8 40%,#05e081 100%);
     height: 100%;
     color: rgb(22, 22, 22);
+    //background: linear-gradient(89deg, #262627, #24303d, #262924, #203137);
 
     background: linear-gradient(89deg, #dfdfe1, #91bdf0, #e1f3da, #94ddf9);
     background-size: 800% 800%;
@@ -196,6 +197,7 @@ Button{
 .project-item{
   margin: 20px;
   padding: 10px;
+  background-color: rgba(245, 245, 245, 0.387);
 }
 
 .section-title{

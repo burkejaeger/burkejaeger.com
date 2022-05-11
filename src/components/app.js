@@ -148,9 +148,12 @@ function FMSCF(props) {
         <div className="healingtogethermacbook" />
       </div>
       <div className="project-cta">
-        <Link to="healing-together">
-          <Button variant="outlined"> View the LiveStream </Button>
-        </Link>
+        <a href="src/downloads/Rotation Summary Presentation (FMS) - Jaeger.pdf" download>
+          <Button variant="outlined"> Download FMS Project Summary </Button>
+        </a>
+        <a href="https://www.bmwchargeforward.com/">
+          <Button variant="outlined"> Go to ChargeForward </Button>
+        </a>
       </div>
     </div>
   );
