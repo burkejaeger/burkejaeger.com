@@ -318,12 +318,22 @@ Button{
   padding: 10px;
   font-size: 1.5em;
   transition: 0.5s;
+  margin: 10px;
+  font-family: 'Kanit', sans-serif;
+  display: flex;
+  align-self: center;
+
 }
 
 .project-button:hover{
   cursor: pointer;
   background-color: rgb(240, 240, 240);
   color: #40566e;
+}
+
+.project-description{
+  font-family: 'Kanit', sans-serif;
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 640px) {

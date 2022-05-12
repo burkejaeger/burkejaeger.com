@@ -15,6 +15,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WorkIcon from '@mui/icons-material/Work';
 import HistoryIcon from '@mui/icons-material/History';
 import BiotechIcon from '@mui/icons-material/Biotech';
+import pdf from '../fms.pdf';
 import Experience from './experience';
 
 function Experiences(props) {
@@ -160,7 +161,10 @@ function FMS(props) {
           <div className="fmslaptop" />
         </div>
         <div className="project-cta">
-          <a href="src/downloads/Rotation Summary Presentation (FMS) - Jaeger.pdf" download>
+          <div className="project-description"> Relations Management web application for documenting and tracking Corporate Field Managers and Dealer Networks. The MVP release, of which I was a part,
+            involved documenting and storing logs and file attachments for interactions
+          </div>
+          <a href={pdf} target="_blank" rel="noreferrer">
             <button type="button" label="Download FMS Project Summary" className="project-button">
               Download FMS Project Summary
             </button>
@@ -186,6 +190,11 @@ function CF(props) {
           <div className="cfmacbook" />
         </div>
         <div className="project-cta">
+          <div className="project-description"> A web and mobile application created in collaboration between BMW Group&#39;s electric vehicle division and regional energy companies.
+            ChargeForward excutes vehicle charging schedules in line with off-peak times for electrical grids, allowing for
+            reduced enviornmental impact of EV ownerships and cost savings on energy production. The charge station locator,
+            of which I was a part of development, helps drivers locate nearby charging options via geo-hashing.
+          </div>
           <a href="https://www.bmwchargeforward.com/">
             <button type="button" label="Go To ChargeForward" className="project-button">
               Go to ChargeForward
