@@ -4,8 +4,6 @@ import {
 } from 'react-router-dom';
 import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
-import Counter from './counter';
-import Controls from './control';
 import Experience from './experience';
 
 function Experiences(props) {
@@ -32,7 +30,8 @@ function Projects(props) {
     <div>
       <Skills />
       <HT />
-      <FMSCF />
+      <FMS />
+      <CF />
       <Card>
         Healing Together
         <Button> View the LiveStream </Button>
@@ -41,11 +40,7 @@ function Projects(props) {
         Healing Together
         <Button> View the LiveStream </Button>
       </Card>
-      <div>
-        <Counter />
-        <Controls />
-        <div>Welcome</div>
-      </div>
+      <div />
     </div>
   );
 }
@@ -134,11 +129,11 @@ function Footer(props) {
   );
 }
 
-function FMSCF(props) {
+function FMS(props) {
   return (
     <div className="project-item">
       <div className="project-header">
-        <div className="project-title"> Field Management System 3.0 +<br /> ChargeForward</div>
+        <div className="project-title"> Field Management System 3.0 </div>
         <div className="project-completion-details">
           <div className="project-org"> BMW Group </div>
           <div className="project-dates"> Winter 2022 </div>
@@ -151,6 +146,25 @@ function FMSCF(props) {
         <a href="src/downloads/Rotation Summary Presentation (FMS) - Jaeger.pdf" download>
           <Button variant="outlined"> Download FMS Project Summary </Button>
         </a>
+      </div>
+    </div>
+  );
+}
+
+function CF(props) {
+  return (
+    <div className="project-item">
+      <div className="project-header">
+        <div className="project-title"> ChargeForward</div>
+        <div className="project-completion-details">
+          <div className="project-org"> BMW Group </div>
+          <div className="project-dates"> Winter 2022 </div>
+        </div>
+      </div>
+      <div className="project-img">
+        <div className="healingtogethermacbook" />
+      </div>
+      <div className="project-cta">
         <a href="https://www.bmwchargeforward.com/">
           <Button variant="outlined"> Go to ChargeForward </Button>
         </a>
