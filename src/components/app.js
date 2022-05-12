@@ -4,6 +4,17 @@ import {
 } from 'react-router-dom';
 import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
+import LocationCityIcon from '@mui/icons-material/LocationCity';
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import SchoolIcon from '@mui/icons-material/School';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import PodcastsIcon from '@mui/icons-material/Podcasts';
+import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import WorkIcon from '@mui/icons-material/Work';
+import HistoryIcon from '@mui/icons-material/History';
+import BiotechIcon from '@mui/icons-material/Biotech';
 import Experience from './experience';
 
 function Experiences(props) {
@@ -28,18 +39,17 @@ function Experiences(props) {
 function Projects(props) {
   return (
     <div>
-      <Skills />
-      <HT />
+
+      <AboutBurke />
+
+      <div className="section-title"> Projects </div>
+
       <FMS />
       <CF />
-      <Card>
-        Healing Together
-        <Button> View the LiveStream </Button>
-      </Card>
-      <Card>
-        Healing Together
-        <Button> View the LiveStream </Button>
-      </Card>
+      <HT />
+
+      <Skills />
+
       <div />
     </div>
   );
@@ -107,19 +117,25 @@ function Skills(props) {
 
 function Header(props) {
   return (
-    <div className="dev-header">
-      <div className="logo-wrapper">
-        <div className="logo" />
+    <div>
+      <div className="dev-header">
+        <div className="logo-wrapper">
+          <div className="logo" />
+        </div>
+        <div className="header-text">
+          <div className="my-name"> Burke J. Jaeger </div>
+          <ul className="titles">
+            <li className="my-title"> Sotware Engineer </li>
+            <li className="my-title"> Research Assistant </li>
+            <li className="my-title"> Dartmouth Undergraduate </li>
+          </ul>
+
+        </div>
+
       </div>
-      <div className="header-text">
-        <div className="my-name"> Burke J. Jaeger </div>
-        <ul className="titles">
-          <li className="my-title"> Sotware Engineer </li>
-          <li className="my-title"> Research Assistant </li>
-          <li className="my-title"> Dartmouth Undergraduate </li>
-        </ul>
-      </div>
+      <Socials />
     </div>
+
   );
 }
 
@@ -140,11 +156,11 @@ function FMS(props) {
         </div>
       </div>
       <div className="project-img">
-        <div className="healingtogethermacbook" />
+        <div className="fmslaptop" />
       </div>
       <div className="project-cta">
         <a href="src/downloads/Rotation Summary Presentation (FMS) - Jaeger.pdf" download>
-          <Button variant="outlined"> Download FMS Project Summary </Button>
+          Download FMS Project Summary
         </a>
       </div>
     </div>
@@ -161,13 +177,15 @@ function CF(props) {
           <div className="project-dates"> Winter 2022 </div>
         </div>
       </div>
-      <div className="project-img">
-        <div className="healingtogethermacbook" />
-      </div>
-      <div className="project-cta">
-        <a href="https://www.bmwchargeforward.com/">
-          <Button variant="outlined"> Go to ChargeForward </Button>
-        </a>
+      <div className="project-display">
+        <div className="project-img">
+          <div className="cfmacbook" />
+        </div>
+        <div className="project-cta">
+          <a href="https://www.bmwchargeforward.com/">
+            Go to ChargeForward
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -189,10 +207,50 @@ function HT(props) {
         </div>
         <div className="project-cta">
           <Link to="healing-together">
-            <Button variant="outlined"> View the LiveStream </Button>
+            View the LiveStream
           </Link>
         </div>
       </div>
+    </div>
+  );
+}
+
+function AboutBurke(props) {
+  return (
+    <div>
+      <div className="section-title"> About Me </div>
+      <div className="skills-bio">
+        <ul className="about-burke-ul">
+          <li className="about-burke"><LocationCityIcon />  Palo Alto + New York </li>
+          <li className="about-burke"><AlternateEmailIcon />  <a href="mailto:b.23@dartmouth.edu">b.23@dartmouth.edu </a></li>
+          <li className="about-burke"><SchoolIcon />  Computer Science </li>
+          <li className="about-burke"><WorkIcon />  VMWare </li>
+          <li className="about-burke"><HistoryIcon />  BMW Group </li>
+          <li className="about-burke"><BiotechIcon />  Persist Lab (NLP) </li>
+        </ul>
+        <Bio />
+      </div>
+    </div>
+
+  );
+}
+
+function Socials(props) {
+  return (
+    <ul className="socials-icons">
+      <a href="https://github.com/burkejaeger/" label="GitHub"><li><GitHubIcon fontSize="extra-extra-large" className="social-icon" /></li></a>
+      <a href="https://www.instagram.com/burkejaeger/" label="Instagram"><li><InstagramIcon fontSize="extra-extra-large" className="social-icon" /></li></a>
+      <a href="https://www.instagram.com/streamgasmoney/" label="Stream Gas Money"><li><PodcastsIcon fontSize="extra-extra-large" className="social-icon" /></li></a>
+      <li><DirectionsCarIcon fontSize="extra-extra-large" className="social-icon-disabled" /></li>
+      <a href="https://www.linkedin.com/in/burkejaeger/" label="LinkedIn"><li><LinkedInIcon fontSize="extra-extra-large" className="social-icon" /></li></a>
+    </ul>
+  );
+}
+
+function Bio(props) {
+  return (
+    <div className="bio-text"> Hi, I&#39;m Burke! I am passionate about real-world applications of the latest
+      technology in order to solve today&#39;s problems, whether through web development, powerful automations, or communication. Incoming
     </div>
   );
 }

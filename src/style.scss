@@ -2,10 +2,10 @@ body, html {
     font-family: "Roboto", sans-serif;
     // background: linear-gradient(to bottom, #87e0fd 0%,#ff8ac8 40%,#05e081 100%);
     height: 100%;
-    color: rgb(22, 22, 22);
-    //background: linear-gradient(89deg, #262627, #24303d, #262924, #203137);
+    color: rgb(240, 240, 240);
+    background: linear-gradient(89deg, #262627, #40566e, #5a6155, #2b4149);
 
-    background: linear-gradient(89deg, #dfdfe1, #91bdf0, #e1f3da, #94ddf9);
+    // background: linear-gradient(89deg, #dfdfe1, #91bdf0, #e1f3da, #94ddf9);
     background-size: 800% 800%;
 
     animation: AnimationName 34s ease infinite;
@@ -24,6 +24,9 @@ body, html {
     height: 15vw;
     background-repeat: no-repeat;
     background-size: contain;
+    border: 2px solid;
+    border-color: whitesmoke; 
+    border-radius: 1000px;
   }
 
   .bmwi4 {
@@ -38,6 +41,30 @@ body, html {
 
   .healingtogethermacbook {
     background-image: url('img/healingtogethermacbook.png');
+    margin: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    min-height: 10px;
+    max-height: 45vh;
+    height: 10000px;
+    width: 45vw;
+  }
+
+  .cfmacbook {
+    background-image: url('img/cfmacbook.png');
+    margin: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    min-height: 10px;
+    max-height: 45vh;
+    height: 10000px;
+    width: 45vw;
+  }
+
+  .fmslaptop {
+    background-image: url('img/fmslaptop.png');
     margin: 20px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -82,8 +109,9 @@ body, html {
 
 
   .active {
-    color: black;
-    box-shadow: 0px 2px 0px black;
+    color:rgb(181, 216, 247);
+    box-shadow: 0px 2px 0px  rgb(181, 216, 247);
+    ;
   }
 
 nav ul{
@@ -100,7 +128,7 @@ nav ul li{
 }
 
 a{
-  color: rgb(22, 22, 22);
+  color: rgb(240, 240, 240);
   text-decoration: none;
 
 }
@@ -203,9 +231,115 @@ Button{
 .section-title{
   font-family: 'Encode Sans SC', sans-serif;
   font-size: 2.5em;
+  margin: 20px;
+  margin-top: 50px;
 }
 
 .skill{
   font-family: 'Kanit', sans-serif;
   font-size: 1.5em;
+}
+
+
+.about-burke{
+  list-style: none;
+  font-family: 'Kanit', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.about-burke-ul{
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+.socials-icons li{
+ font-size: 3em; 
+ list-style: none;
+ padding-left: 0;
+}
+
+@keyframes jiggle2{
+  0%{
+      transform: rotate(0deg)
+  }
+  25%{
+      transform: rotate(10deg)
+  }
+  50%{
+      transform: rotate(-10deg)
+  }
+  75%{
+      transform: rotate(0deg)
+  }
+}
+
+.social-icon:hover{
+  animation: jiggle2 0.6s;
+}
+
+.socials-icons{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  padding-left: 0;
+}
+
+.social-icon-disabled{
+  opacity: 50%;
+}
+
+
+.skills-bio{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.bio-text{
+  padding-right: 5vw;
+  padding-left: 5vw;
+  margin-left: 5vw;
+  font-family: 'Kanit', sans-serif;
+  display: flex;
+  font-size: 1.5em;
+  align-items: center;
+  background-color: rgba(245, 245, 245, 0.387);
+}
+
+@media only screen and (max-width: 640px) {
+  .dev-header{
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .logo-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo{
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .my-name{
+    font-size: 2.0em;
+  }
+
+  .skills-bio{
+    flex-direction: column;
+  }
+
+  .bio-text{
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
 }
