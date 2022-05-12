@@ -15,7 +15,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WorkIcon from '@mui/icons-material/Work';
 import HistoryIcon from '@mui/icons-material/History';
 import BiotechIcon from '@mui/icons-material/Biotech';
-import pdf from '../fms.pdf';
+// import { pdfFile } from '../../public/fms.pdf';
 import Experience from './experience';
 
 function Experiences(props) {
@@ -164,7 +164,7 @@ function FMS(props) {
           <div className="project-description"> Relations Management web application for documenting and tracking Corporate Field Managers and Dealer Networks. The MVP release, of which I was a part,
             involved documenting and storing logs and file attachments for interactions
           </div>
-          <a href={pdf} target="_blank" rel="noreferrer">
+          <a href="https://drive.google.com/file/d/1VAbOWBdbldeDdKVYVyDx3PgGlG-HsbId/view?usp=sharing" target="_blank" rel="noreferrer">
             <button type="button" label="Download FMS Project Summary" className="project-button">
               Download FMS Project Summary
             </button>
