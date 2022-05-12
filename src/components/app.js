@@ -155,13 +155,17 @@ function FMS(props) {
           <div className="project-dates"> Winter 2022 </div>
         </div>
       </div>
-      <div className="project-img">
-        <div className="fmslaptop" />
-      </div>
-      <div className="project-cta">
-        <a href="src/downloads/Rotation Summary Presentation (FMS) - Jaeger.pdf" download>
-          Download FMS Project Summary
-        </a>
+      <div className="project-display">
+        <div className="project-img">
+          <div className="fmslaptop" />
+        </div>
+        <div className="project-cta">
+          <a href="src/downloads/Rotation Summary Presentation (FMS) - Jaeger.pdf" download>
+            <button type="button" label="Download FMS Project Summary" className="project-button">
+              Download FMS Project Summary
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -183,7 +187,9 @@ function CF(props) {
         </div>
         <div className="project-cta">
           <a href="https://www.bmwchargeforward.com/">
-            Go to ChargeForward
+            <button type="button" label="Go To ChargeForward" className="project-button">
+              Go to ChargeForward
+            </button>
           </a>
         </div>
       </div>
@@ -207,7 +213,9 @@ function HT(props) {
         </div>
         <div className="project-cta">
           <Link to="healing-together">
-            View the LiveStream
+            <button type="button" label="View Remembering Together" className="project-button">
+              View the LiveStream
+            </button>
           </Link>
         </div>
       </div>
@@ -241,7 +249,7 @@ function Socials(props) {
       <a href="https://github.com/burkejaeger/" label="GitHub"><li><GitHubIcon fontSize="extra-extra-large" className="social-icon" /></li></a>
       <a href="https://www.instagram.com/burkejaeger/" label="Instagram"><li><InstagramIcon fontSize="extra-extra-large" className="social-icon" /></li></a>
       <a href="https://www.instagram.com/streamgasmoney/" label="Stream Gas Money"><li><PodcastsIcon fontSize="extra-extra-large" className="social-icon" /></li></a>
-      <li><DirectionsCarIcon fontSize="extra-extra-large" className="social-icon-disabled" /></li>
+      <a href="http://gasmoneymedia.com/" label="Gas Money Media"><li><DirectionsCarIcon fontSize="extra-extra-large" className="social-icon" /></li></a>
       <a href="https://www.linkedin.com/in/burkejaeger/" label="LinkedIn"><li><LinkedInIcon fontSize="extra-extra-large" className="social-icon" /></li></a>
     </ul>
   );
@@ -250,7 +258,7 @@ function Socials(props) {
 function Bio(props) {
   return (
     <div className="bio-text"> Hi, I&#39;m Burke! I am passionate about real-world applications of the latest
-      technology in order to solve today&#39;s problems, whether through web development, powerful automations, or communication. Incoming
+      technology in order to solve today&#39;s problems, whether through web development, powerful automations, or communication. Incoming SWE Intern @ VMWare, formerly DevOps @ BMW Group.
     </div>
   );
 }
