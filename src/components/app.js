@@ -2,7 +2,6 @@ import React from 'react';
 import {
   BrowserRouter as Router, Route, Routes, NavLink, useParams, Link,
 } from 'react-router-dom';
-import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
 import LocationCityIcon from '@mui/icons-material/LocationCity';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
@@ -16,23 +15,12 @@ import WorkIcon from '@mui/icons-material/Work';
 import HistoryIcon from '@mui/icons-material/History';
 import BiotechIcon from '@mui/icons-material/Biotech';
 // import { pdfFile } from '../../public/fms.pdf';
-import Experience from './experience';
 
 function Experiences(props) {
   return (
     <div>
       <div>
-        <Experience position="DevOps Intern" org="BMW Group" dates="Jan 2021" />
-        <Card>
-          <div className="experience-left-column">
-            <div className="experience-title">BMW Group</div>
-            <div className="bmwi4" />
-          </div>
-        </Card>
-        <Card>
-
-          RWJBarnabas Health          <Button> View the LiveStream </Button>
-        </Card>
+        Coming Soon
       </div>
     </div>
   );
@@ -42,7 +30,6 @@ function Projects(props) {
     <div>
 
       <AboutBurke />
-
       <div className="section-title"> Projects </div>
 
       <FMS />
@@ -109,8 +96,9 @@ function Skills(props) {
       <div className="section-title"> Skills </div>
       <ul>
         <li className="skill"> React </li>
-        <li className="skill"> TestCafe </li>
+        <li className="skill"> Software Testing and Automation </li>
         <li className="skill"> Python </li>
+        <li className="skill"> Natural Language Processing </li>
       </ul>
     </div>
   );
